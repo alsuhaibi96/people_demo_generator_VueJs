@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/assets/css/style.css">
+    <title>Demo People Generator</title>
+</head>
+
+<body>
+    <div id="app">
+        <img class="img-style" v-bind:src="picture" :alt="`${firstName} ${lastName}`" loading="lazy">
+        <h1>{{ firstName }} {{ lastName }}</h1>
+        <h3>Email:{{ email }}</h3>
+        <button class="btn-style" v-on:click="getUser()">Generate Random User</button>
+
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <script src="src/assets/js/app.js"></script>
+
+
+
+
+</body>
+
+</html>
